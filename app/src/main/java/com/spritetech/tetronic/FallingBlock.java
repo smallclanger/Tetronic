@@ -76,7 +76,7 @@ public class FallingBlock implements SPDrawable {
         int[][] temp = new int[rowNum][colNum];
 
         for(int i=0; i<shape[0].length; i++){
-            for(int j=shape.length-1; j>=0; j--){
+            for(int j=shape.length-1; j>0; j--){
                 if( shape[i][j]==1)
                     temp[j][i] = shape[i][j];
             }
